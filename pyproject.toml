@@ -1,0 +1,17 @@
+[project]
+name = "inflation-scenario-engine"
+version = "0.1.0"
+description = "محرك سيناريوهات التضخم - Inflation Scenario Engine"
+authors = [{name = "Inflation Analysis Team"}]
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.2.0",
+    "openpyxl>=3.1.0",
+    "pyyaml>=6.0.0"
+]
+
+[project.scripts]
+infl-scen = "src.infl_scen.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
